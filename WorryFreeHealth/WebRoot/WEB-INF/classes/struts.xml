@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="default" extends="struts-default">
+<!-- 管理员 -->
+		<!-- 管理员登录 -->
+		<action name="adminLogin" class="org.worryfreehealth.action.AdminLoginAction">
+		</action>
+		<!-- 查询管理员 -->
+		<action name="adminSearch" class="org.worryfreehealth.action.SearchAdmin">
+			<result name="success">/searchAdmin.jsp</result>
+		</action>
+		<!-- 增加管理员 -->
+		<action name="addAdmin" class="org.worryfreehealth.action.AddAdminAction">
+		</action>
+		<!-- 删除页面删除管理员 -->
+		<action name="delete" class="org.worryfreehealth.action.DeleteAdmin">
+		</action>
+		<!-- 查询页面删除管理员 -->
+		<action name="deleteAdminById" class="org.worryfreehealth.action.DeleteAdminByIdAction">
+		</action>
+		<!-- 查询管理员界面显示管理员信息 -->
+		<action name="update" class="org.worryfreehealth.action.updateAdmin">
+			<result name="success">/changeAdmin.jsp</result>
+		</action>
+		<!-- 修改管理员密码 -->
+		<action name="updateAdminPassword" class="org.worryfreehealth.action.UpdateAdminPasswordAction">
+			<result name="input">/changeAdmin.jsp</result>
+		</action>
+		<!-- 修改管理员信息 -->
+		<action name="updateAdmin" class="org.worryfreehealth.action.UpdateAdminAction">
+			<result name="success">/searchAdmin.jsp</result>
+		</action>
+		<!-- 删除页面查询所有管理员信息 -->
+		<action name="searchAllAdmin" class="org.worryfreehealth.action.SearchAllAdminAction">
+			<result name="success">/searchAdmin.jsp</result>
+		</action>
+		
+<!-- 医生 -->
+
+		<!-- 查询医生 -->
+		<action name="searchDoctor" class="org.worryfreehealth.action.SearchDoctorAction">
+		     <result name="success">/searchDoctor.jsp</result>
+		</action>
+		<!-- 删除医生 -->
+		<action name="deleteDoctor" class="org.worryfreehealth.action.DeleteDoctor">
+		</action>
+		<!-- 真正删除医生 -->
+		<action name="deleteDoctorReal" class="org.worryfreehealth.action.RealDeleteDoctor">
+		</action>
+		<!-- 查询所有未审核的医生 -->
+		<action name="searchAllDoctor" class="org.worryfreehealth.action.SearchAllDoctorAction">
+			<result name="success">/examinDoctor.jsp</result>
+		</action>
+		<!-- 查询所有使用状态的医生信息 -->
+		<action name="searchAllDoctorUsed" class="org.worryfreehealth.action.SearchAllDoctorUsedAction">
+			<result name="success">/deleteDoctor.jsp</result>
+		</action>
+		<!-- 审核医生 -->
+		<action name="examineDoctor" class="org.worryfreehealth.action.ExamineDoctor">
+			<result name="success">/examinDoctor.jsp</result>
+		</action>
+		
+<!-- 科室 -->
+
+		<!-- 增加科室 -->
+		<action name="addDesk" class="org.worryfreehealth.action.AddDeskAction">
+		</action>
+		<!-- 查询所有科室 -->
+		<action name="searchAllDesk" class="org.worryfreehealth.action.SearchAllDeskAction">
+		    <result name="success">/deleteDesk.jsp</result>
+		</action> 
+		<!-- 查询科室 -->
+		<action name="searchDesk" class="org.worryfreehealth.action.SearchDeskAction">
+		    <result name="success">/searchDesk.jsp</result>
+		</action> 
+		<!-- 查询科室页面查询科室 -->
+		<action name="updateDesk" class="org.worryfreehealth.action.SearchThenUpdateAction">
+			<result name="success">/changeDesk.jsp</result>
+		</action>
+		<!-- 删除科室 -->
+		<action name="deleteDesk" class="org.worryfreehealth.action.deleteDeskAction">
+		</action>
+		<!-- 查询页面删除科室 -->
+		<action name="searchThenDeleteDesk" class="org.worryfreehealth.action.SearchThenDeleteDeskAction">
+		</action>
+		<!-- 修改科室信息 -->
+		<action name="changeDesk" class="org.worryfreehealth.action.UpdateDeskAction">
+			<result name="success">/searchDesk.jsp</result>
+		</action>
+		
+<!-- 患者 -->	
+
+        <!-- 查询使用状态患者  -->
+		<action name="searchPatient" class="org.worryfreehealth.action.SearchPatientAction">
+			<result name="success">/searchPatient.jsp</result>
+		</action>
+		<!-- 查询未审核患者  -->
+		<action name="examinThenSearchPatient" class="org.worryfreehealth.action.ExaminThenSearchPatientAction">
+			<result name="success">/examinPatient.jsp</result>
+		</action>
+		<action name="deleteThenSearchPatient" class="org.worryfreehealth.action.DeleteThenSearchPatientAction">
+			<result name="success">/deletePatient.jsp</result>
+		</action>
+		<!-- 查询页面假删患者  -->
+		<action name="searchThenDelete" class="org.worryfreehealth.action.SearchThenDeletePatientAction">
+		</action>
+		<!-- 审核通过  -->
+		<action name="examinPatient" class="org.worryfreehealth.action.ExaminPatientAction">
+		</action>
+		<!-- 审核页面删除患者记录 -->
+		<action name="ExaminThenDeletePatientById" class="org.worryfreehealth.action.ExaminThenDeletePatientByIdAction">
+		</action> 
+		<!-- 删除页面假删患者  -->
+		<action name="deletePatient" class="org.worryfreehealth.action.DeletePatientAction">
+		</action> 
+		
+<!-- 医院 -->
+
+        <!-- 查询医院  -->
+		<action name="searchHospital" class="org.worryfreehealth.action.SearchHospitalAction">
+			<result name="success">/searchHospital.jsp</result>
+		</action>
+		<!-- 查询详细信息 -->
+		<action name="SearchHospitalMessage" class="org.worryfreehealth.action.SearchHospitalMessageAction">
+			<result name="success">/hospitalMessage.jsp</result>
+		</action>
+		<!-- 删除页面查询所有医院 -->
+		<action name="deleteThenSearchHospital" class="org.worryfreehealth.action.DeleteThenSearchHospitalAction">
+			<result name="success">/deleteHospital.jsp</result>
+		</action>
+		<!-- 详细信息页面->修改信息->查询信息 -->
+		<action name="SearchThenUpdateHospitalMessage" class="org.worryfreehealth.action.SearchThenUpdateHospitalMessageAction">
+			<result name="success">/changeHospital.jsp</result>
+		</action>
+		<!-- 修改信息 -->
+		<action name="changeHospitalMessage" class="org.worryfreehealth.action.ChangeHospitalMessageAction"> 
+		</action>
+	    <!-- 添加信息 -->
+		<action name="addHospitalMessage" class="org.worryfreehealth.action.AddHospitalMessageAction"> 
+		</action>		
+		<!-- 查询信息页面删除信息 -->
+		<action name="searchThenDeleteHospital" class="org.worryfreehealth.action.SearchThenDeleteHospitalAction">
+		</action>
+		<!-- 删除信息页面删除信息 -->
+		<action name="deleteHospital" class="org.worryfreehealth.action.DeleteHospitalAction">
+		</action>
+		
+<!-- 订单 -->
+
+        <!-- 查询订单状态-->
+        <action name="searchOrderListState" class="org.worryfreehealth.action.SearchOrderListStateAction">
+			<result name="success">/searchOrderState.jsp</result>
+		</action>
+		<!-- 删除页面查询订单 -->
+		<action name="deleteThenSearchOrderList" class="org.worryfreehealth.action.DeleteThenSearchOrderListAction">
+			<result name="success">/deleteOrder.jsp</result>
+		</action>
+		<!-- 查询订单页面删除信息 -->
+		<action name="searchThenDeleteOrderList" class="org.worryfreehealth.action.SearchThenDeleteOrderListAction">
+		</action>   
+		<!-- 删除订单页面删除信息 -->
+		<action name="deleteOrderList" class="org.worryfreehealth.action.DeleteOrderListAction">
+		</action>
+		
+<!-- 咨询信息 -->
+
+        <!-- 查询咨询信息状态 -->
+        <action name="searchMessageState" class="org.worryfreehealth.action.SearchMessageStateAction">
+            <result name="success">/searchMessageState.jsp</result>
+        </action>
+        <!-- 审核页面查询未审核的咨询信息 -->
+        <action name="examinThenSearchMessage" class="org.worryfreehealth.action.ExaminThenSearchMessageAction">
+            <result name="success">/examinMessage.jsp</result>
+        </action>
+        <!-- 删除页面查询所有咨询信息 -->
+        <action name="deleteThenSearchMessage" class="org.worryfreehealth.action.DeleteThenSearchMessageAction">
+            <result name="success">/deleteMessage.jsp</result>
+        </action>
+        <!-- 查询页面删除咨询信息 -->
+        <action name="searchThenDeleteMessage" class="org.worryfreehealth.action.SearchThenDeleteMessageAction"> 
+        </action>
+        <!-- 审核页面删除咨询信息 -->
+        <action name="examinThenDeleteMessage" class="org.worryfreehealth.action.ExaminThenDeleteMessage"> 
+        </action>
+        <!-- 删除页面删除咨询信息 -->
+        <action name="deleteMessage" class="org.worryfreehealth.action.DeleteMessageAction"> 
+        </action>
+        <!-- 审核咨询信息 -->
+        <action name="examineMessage" class="org.worryfreehealth.action.ExaminMessageAction"> 
+        </action>           
+	</package>
+	<constant name="struts.multipart.saveDir" value="/tmp"></constant>
+</struts>    

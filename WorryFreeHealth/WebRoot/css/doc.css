@@ -1,0 +1,70 @@
+@CHARSET "UTF-8";
+/*注册按钮定位*/
+.spos
+{
+position:relative;
+left:-700px;
+top:20px;
+}
+/*重置按钮定位*/
+.rpos
+{
+position:relative;
+left:-580px;
+top:-10px;
+}
+/*背景图片*/
+body {
+ background-image: url(../images/bg.jpg);
+ background-size:1368px 760px;
+}
+/*注册按钮样式*/
+.button1{
+        width: 100px;
+        height: 30px;
+        font-size: 16px;
+        font-family: 微软雅黑;
+        letter-spacing: 8px;
+        padding-left: 12px;
+        border-radius: 5px;
+        border: 1px solid #2576A8;
+        background: -webkit-linear-gradient(top,#66B5E6,#2e88c0);
+        background: -moz-linear-gradient(top,#66B5E6,#2e88c0);
+        background: linear-gradient(top,#66B5E6,#2e88c0);
+        background: -ms-linear-gradient(top,#66B5E6,#2e88c0);
+        box-shadow: 0 1px 2px #8AC1E2 inset,0 -1px 0 #316F96 inset;
+        color: #fff;
+        text-shadow: 1px 1px 0.5px #22629B;
+}
+.button1:hover{
+
+   background: -webkit-linear-gradient(top,#8DC9EF,#4E9FD1);
+   background: -moz-linear-gradient(top,#8DC9EF,#4E9FD1);
+   background: linear-gradient(top,#8DC9EF,#4E9FD1);
+   background: -ms-linear-gradient(top,#8DC9EF,#4E9FD1);  
+}
+/*重置按钮样式*/
+.button2{
+        width: 100px;
+        height: 30px;
+        font-size: 16px;
+        font-family: 微软雅黑;
+        letter-spacing: 8px;
+        padding-left: 12px;
+        border-radius: 5px;
+        border: 1px solid #2576A8;
+        background: -webkit-linear-gradient(top,#66B5E6,#2e88c0);
+        background: -moz-linear-gradient(top,#66B5E6,#2e88c0);
+        background: linear-gradient(top,#66B5E6,#2e88c0);
+        background: -ms-linear-gradient(top,#66B5E6,#2e88c0);
+        box-shadow: 0 1px 2px #8AC1E2 inset,0 -1px 0 #316F96 inset;
+        color: #fff;
+        text-shadow: 1px 1px 0.5px #22629B;
+}
+.button2:hover{
+
+   background: -webkit-linear-gradient(top,#8DC9EF,#4E9FD1);
+   background: -moz-linear-gradient(top,#8DC9EF,#4E9FD1);
+   background: linear-gradient(top,#8DC9EF,#4E9FD1);
+   background: -ms-linear-gradient(top,#8DC9EF,#4E9FD1);  
+}

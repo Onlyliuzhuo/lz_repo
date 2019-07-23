@@ -1,0 +1,143 @@
+@charset "utf-8";
+* { box-sizing: border-box; } 
+body {
+	width: 100%;
+	height: 100px;
+	margin: 0; 
+	padding: 0; 
+	background: #F5F3F3;
+	background-clip: border-box;
+	font-weight: 500; 
+	font-family: "Microsoft YaHei","宋体","Segoe UI", "Lucida Grande", Helvetica, Arial,sans-serif, FreeSans, Arimo; 
+}
+
+/*Head of Index*/
+a.headOfIndex:link{color: #0E0E0E; text-decoration: none}
+a.headOfIndex:hover{
+	color:blue;
+	text-decoration: underline;
+	border-width: 1px;
+	border-color: dodgerblue;
+	border-style: solid;
+	border-color: transparent;
+}
+
+div.headOfIndex{
+	background-color:white;
+	background-clip: padding-box;
+	padding:8px;
+		
+}
+/*下拉菜单*/
+.menu{    
+    margin:0px auto;    
+    width:404px;    
+    height:21px;
+	float: right;
+}    
+.menu ul{    
+    margin:0px;    
+    padding:0px;    
+}    
+.menu ul li{    
+    position:relative;    
+    float:left;    
+    list-style:none;    
+    padding:4px;    
+    border:1px;    
+    font-size:14px;    
+    width:95px;    
+    text-align: center;    
+    background:white;    
+    }    
+    .menu ul li ul{
+	padding:4px;
+	margin:4px;
+    display:none;
+	background-color:white;
+	border-width: thin;
+	border-color: aqua;
+    }    
+    .menu ul li:hover ul{    
+    display:block;    
+    position: absolute; left: 0px; top: 21px;
+	background-color:white;
+	border-width: thin;
+	border-color: aqua;
+    }    
+    .menu a:link{    
+    text-decoration: none;    
+    color:#000000;       
+    }    
+    .menu a:hover{    
+    text-decoration: none;    
+    color:#000000;   
+    }    
+
+/*end Of Head*/
+
+/*start of Logo*/
+
+.logOfIndex{
+	margin: 0;
+	padding: 0;
+	position: relative;
+	top: 40px;
+}
+.logOfIndex img{
+	position: relative;
+	width:160px;
+	height:80px;
+	left: 100px;
+	top: 25px;
+}
+
+.search{
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 40px;
+	left: 480px;
+}
+.search select{
+	/*隐藏下拉图标*/
+	appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    /*通过padding让文字居中*/
+    padding-left: 20px;
+    font-size: 18px;
+    letter-spacing:2px;
+    /*添加下拉条*/
+    background: url("http://ourjs.github.io/static/2015/arrow.png") no-repeat scroll right center transparent;
+	border-radius: 5px;
+	width: 100px;
+	height: 43px;
+	margin: 0px;
+	border: 2px solid #0463F4; 
+	float: left;
+}
+/*搜索框1*/ 
+input.bar1 { 
+	border: 2px solid #0463F4; 
+	background: white; 
+	color: #9E9C9C; 
+	width: 450px;
+	height: 42px;
+	padding-left: 8px;
+	margin-left: 0px;
+	float: left;
+} 
+.searchButton{
+	position: relative;
+	left: -8px;
+	width: 100px;
+	height: 43px;
+	background: #0463F4; 
+	border-radius: 5px; 
+} 
+.searchButton:before { 
+	font-family: FontAwesome; 
+	font-size: 16px; 
+	color: #F9F0DA; 
+}

@@ -1,0 +1,118 @@
+@charset "utf-8";
+/* CSS Document */
+
+html {
+	overflow-y: scroll; 
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0; 
+	padding: 0; 
+	background: #f0f0f0;
+	background-image: url("../image/brickwall.png");
+	background-attachment: fixed;
+	background-repeat: round;
+	background-clip: border-box;
+	font-family: "Microsoft YaHei","宋体","Segoe UI", "Lucida Grande", Helvetica, Arial,sans-serif, FreeSans, Arimo; 
+}
+
+/*Start of Header*/
+div.Header{
+	width: 100%;
+	height: 100%;
+	background-color: #f0f0f0;
+	background-clip: padding-box;
+	height: 70px;
+}
+div.HeaderRight{
+	float: right;
+	margin-top: 15px;
+}
+span.LogoRight{
+	font-size: 20px;
+	position: absolute; top: 18px;
+}
+span.Header{
+	font-weight: bold;
+	font-size: 20px;
+}
+img.logoHeader{
+	position: relative;
+	margin-left: 100px;
+	margin-top: 10px;
+	padding-right: 10px;
+	width:100px;
+	height:50px;
+		
+}
+img.messageHeader{
+	position: relative;
+	margin-right: 150px;
+	width: 25px;
+	height: 25px;
+}
+
+div.Wechat{	
+	position: relative;
+	padding: 0px;
+	width: 120px;
+	margin-top: 25px;
+	left: +230px;	
+	border: 2px solid white;
+}
+/*end of Header*/
+
+
+
+/*start of Form*/
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+	color: black;
+}
+a:hover{
+	opacity:0.6;
+    color: blue;
+	border:0.5px solid #CBCBCB;
+	filter:alpha(Opacity=80);
+}
+  
+.form {
+	width: 100%;
+	height: 100%;
+	align: center;
+	background: white;
+	padding: 60px;
+	max-width:600px;
+    margin:40px auto;
+	border-radius:  20px;
+    box-shadow:2px 4px 10px 4px #f0f0f0;
+}
+
+.tab-group{
+	list-style: none;
+	padding: 0;
+	margin: 0 0 40px 0;
+	display: table;
+	clear: both;
+	text-align: center;
+}
+.tab-group li{
+	float: left;
+	display: inline-block;
+}
+.tab-group li a{
+	display: block;
+	text-decoration: none;
+	padding: 15px;
+	border-radius: 4px;
+	float: left;
+	cursor: pointer;
+	width: 50%;
+	font-size: 15px;
+}
+

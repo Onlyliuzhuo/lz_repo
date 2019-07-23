@@ -1,0 +1,123 @@
+* { box-sizing: border-box; } 
+body { 
+	margin: 0; 
+	padding: 0; 
+	background: white;
+	background-clip: border-box;
+	font-weight: 500; 
+	font-family: "Microsoft YaHei","宋体","Segoe UI", "Lucida Grande", Helvetica, Arial,sans-serif, FreeSans, Arimo;
+	background-image: url(images/register.png); 
+	background-repeat: no-repeat;
+}
+
+/*Head of Index*/
+a.headOfIndex:link{color: #0E0E0E; text-decoration: none}
+a.headOfIndex:hover{
+	color:blue;
+	text-decoration: underline;
+	border-width: 1px;
+	border-color: dodgerblue;
+	border-style: solid;
+	border-color: transparent;
+}
+
+div.headOfIndex{
+	background-color:#E9E9E9;
+	background-clip: padding-box;
+	padding:8px;
+		
+}
+/*下拉菜单*/
+.menu{    
+    margin:0px auto;    
+    width:404px;    
+    height:21px;
+	float: right;
+}    
+.menu ul{    
+    margin:0px;    
+    padding:0px;    
+}    
+.menu ul li{    
+    position:relative;    
+    float:left;    
+    list-style:none;    
+    padding:4px;    
+    border:1px;    
+    font-size:14px;    
+    width:95px;    
+    text-align: center;    
+    background:#E9E9E9;    
+    }    
+    .menu ul li ul{
+	padding:4px;
+	margin:4px;
+    display:none;
+	background-color:#E9E9E9;
+	border-width: bold;
+	border-color: aqua;
+    }    
+    .menu ul li:hover ul{    
+    display:block;    
+    position: absolute; left: 0px; top: 21px;
+	background-color:#E9E9E9;
+	border-width: thin;
+	border-color: aqua;
+    }    
+    .menu a:link{    
+    text-decoration: none;    
+    color:#000000;       
+    }    
+    .menu a:hover{    
+    text-decoration: none;    
+    color:#000000;   
+    }    
+
+/*end Of Head*/
+
+div.logo{
+	float: left;
+	margin: 3px;
+	font-weight: normal;
+	font-size: 21px;
+	text-align: center;
+}
+div.logo img{
+	margin: 5px;
+	height: 60px;
+	width: 100px;
+	right-margin: 0px;	
+}
+
+.form{
+	align: center;
+	border-style: solid;
+	border-width: 3px;
+	border-color: #E9E9E9;
+	margin-top: 50px;
+	width: 400px;
+	height: 500px;
+	position: absolute;
+	left: 450px;
+}
+
+.form form{
+	margin: 40px;
+}
+.form form a:link{
+	text-decoration: none;
+	color: blue;
+}
+
+.form form input{
+	margin: 7px;
+	border:1px outset;
+	border-color: orange;
+    border-radius:8px;
+    width: 300px;
+    height: 50px;	
+}
+
+.form form input[type="button"] :hover{
+	background-color: dodgerblue;
+}
